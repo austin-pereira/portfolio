@@ -30,7 +30,7 @@ const ExperienceBox = ({ image, title, date, description }) => {
   return (
     <div className="experience-box">
       <div className="image-container">
-        <img src={image} alt={title} className="img-with-border" />
+        <img src={image} alt={title} className="img-inborder" />
       </div>
       <div className="text-content">
         <h2>{title}</h2>

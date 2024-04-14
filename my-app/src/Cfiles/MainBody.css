@@ -11,7 +11,7 @@
 }
 
 .image-container {
-  margin-right: 100px; /* Space between image and text */
+  margin-right: 150px; /* Space between image and text */
 
 }
 
@@ -25,16 +25,18 @@
 }
 
 .image-container img {
+  
   display: block; /* To prevent inline default space */
-  width: 100%; /* Ensures the image takes the full width of its parent */
-  border-radius: 50%; /* Ensures the image is circular */
+  
+  /* width: 100%; /* Ensures the image takes the full width of its parent */
+  /* border-radius: 50%; Ensures the image is circular */ 
 }
 
 
 
 .text-content {
   flex: 1;
-  padding-left: 20px; /* Added padding */
+  padding-left: 40px; /* Added padding */
 }
 
 .text-content h1 {
