@@ -1,0 +1,82 @@
+.skills-container {
+  background-color: white; /* White background for the whole section */
+  width: 100%;
+  padding: 50px 0; /* Adjust padding to your preference */
+}
+
+.skills-content {
+  max-width: 1200px; /* Adjust the width as per your layout */
+  margin: auto;
+  padding: 0 20px;
+}
+
+.skills-header {
+  text-align: center; /* Centering the title and description */
+}
+
+.skills-title {
+  font-size: 2.5rem; /* Large font size for title */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 10px;
+}
+
+.skills-description {
+  font-size: 1.2rem;
+  color: #555; /* Slightly lighter color for description */
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Increased space between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 250px; /* Set a fixed height for all cards */
+}
+
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow size on hover */
+}
+
+.skill-icon {
+  width: 80px; /* Increased icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500; /* Slightly bolder font for the skill name */
+}
+
+/* Colored shadows for each tech */
+.shadow-orange-500 { box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5); }
+.shadow-blue-500 { box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5); }
+.shadow-yellow-500 { box-shadow: 0 8px 30px rgba(234, 179, 8, 0.5); }
+.shadow-blue-600 { box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5); }
+.shadow-sky-400 { box-shadow: 0 8px 30px rgba(14, 165, 233, 0.5); }
+.shadow-green-400 { box-shadow: 0 8px 30px rgba(74, 222, 128, 0.5); }
+.shadow-pink-400 { box-shadow: 0 8px 30px rgba(236, 72, 153, 0.5); }
+.shadow-gray-400 { box-shadow: 0 8px 30px rgba(156, 163, 175, 0.5); }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem; /* Slightly smaller font for mobile */
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  }
+}

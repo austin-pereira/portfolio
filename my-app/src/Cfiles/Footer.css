@@ -1,12 +1,17 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
-  background-color: #f8f8f8; /* or any color you want */
-  padding: 20px 0; /* adjust the padding as needed */
-  color: #333; /* footer text color */
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  color: #333;
 }
 
 .container {
   width: 80%;
-  margin: 0 auto; /* centers the container */
+  margin: 0 auto;
 }
 
 .text-center {
@@ -14,36 +19,17 @@ footer {
 }
 
 .list-inline {
-  padding-left: 0; /* removes padding */
-  list-style-type: none; /* removes bullets */
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 .list-inline li {
-  display: inline; /* displays the list items inline */
-  padding: 0 10px; /* adjust the space between icons */
-}
-
-.fa-stack {
-  vertical-align: top;
-}
-
-.fa-circle {
-  color: #aaa; /* circle color */
+  margin: 0 10px;
 }
 
 .fa-inverse {
-  color: #9f9f9f; /* icon color */
+  color: #9f9f9f;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 991px) {
-  .container {
-    width: 95%;
-  }
-
-  .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

@@ -1,13 +1,15 @@
 import React from 'react';
-import '../Cfiles/Header.css';
+import '../Cfiles/HeaderRest.css';
 import { Link } from 'react-router-dom';
 
-
-const Header = () => {
+const About = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="header-name" >Austin Pereira</div>
+        <div className="name-and-title">
+          <span className="header-name">Austin Pereira</span>
+          <span className="header-title">Robotics and AI Engineer</span>
+        </div>
         <nav className="header-nav">
           <Link to="/skills">Skills</Link>
           <Link to="/experience">Experience</Link>
@@ -19,5 +21,6 @@ const Header = () => {
   );
 };
 
+export default About;
 
-export default Header;
+
