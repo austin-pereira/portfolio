@@ -1,0 +1,96 @@
+.main-body {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 100px;
+  padding-top: 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1050px; /* Adjusted to set a max-width */
+}
+
+.image-container {
+  margin-right: 100px; /* Space between image and text */
+
+}
+
+.img-with-border {
+  width: 220px; /* Adjusted size */
+  height: 220px; /* Adjusted size */
+  border-radius: 50%;
+  border: 5px solid #0997c3; /* Adjusted color and thickness */
+  padding: 3px; /* Adjusted padding */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.image-container img {
+  display: block; /* To prevent inline default space */
+  width: 100%; /* Ensures the image takes the full width of its parent */
+  border-radius: 50%; /* Ensures the image is circular */
+}
+
+
+
+.text-content {
+  flex: 1;
+  padding-left: 20px; /* Added padding */
+}
+
+.text-content h1 {
+  font-weight: bold;
+  font-size: 4em; /* Adjusted size */
+  color: #434343;
+  margin-bottom: 10px;
+}
+.text-content hr {
+  width: 50%; /* Adjust the width of the line */
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: #464646; /* Adjust the color as necessary */
+  margin: 0 auto; /* Center the line horizontally */
+  border: none; /* Remove any default border */
+}
+
+
+.text-content p {
+  font-size: 1.2em; /* Increase the font size */
+  color: #161616; /* Keep the text color */
+  margin-bottom: 15px; /* Increase the bottom margin */
+}
+
+.text-content a {
+  color: #007bff;
+  text-decoration: none; /* Removes underline */
+}
+.text-content .uc-berkeley {
+  font-weight: bold;
+  color: rgb(198, 149, 27); /* Change color to golden */
+}
+
+.text-content .focus {
+  font-weight: bold;
+  color: rgb(3, 142, 193); /* Change color to blue */
+}
+.text-content a.special-link {
+  /* Styling for special links */
+  font-weight: bold;
+  color: #0066cc;
+}
+
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .main-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-content {
+    padding-left: 0;
+  }
+}

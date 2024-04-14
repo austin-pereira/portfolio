@@ -1,0 +1,24 @@
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    padding: 80px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  
+  .description-text h1 {
+    font-size: 60px; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  
+  .description-text p {
+  margin: 10px 0 0; /* Only top margin */
+  font-size: 1.2em; /* Increase the font size */
+}
+
+  

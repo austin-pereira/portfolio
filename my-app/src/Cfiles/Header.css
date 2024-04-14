@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  padding: 20px 40px;
+  
+  color: white;
+  font-size: 18px;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max width as per your design */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name {
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Add some hover effect to links */
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .header-nav a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .header-name {
+    font-size: 24px;
+  }
+
+  .header {
+    padding: 10px 20px;
+  }
+}
