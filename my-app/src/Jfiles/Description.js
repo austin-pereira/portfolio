@@ -6,7 +6,7 @@ const Description = () => {
     <section className="description">
       <div className="description-text">
         <h1>Robotics and AI Engineer</h1>
-        <p>Berkeley, CA, USA</p>
+        <p>California, USA</p>
       </div>
     </section>
   );

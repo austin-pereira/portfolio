@@ -39,7 +39,7 @@
 
 .text-content h1 {
   font-weight: bold;
-  font-size: 4em; /* Adjusted size */
+  font-size: 3.2em; /* Adjusted size */
   color: #434343;
   margin-bottom: 10px;
 }
@@ -53,13 +53,13 @@
 
 
 .text-content p {
-  font-size: 1.2em; /* Increase the font size */
+  font-size: 1em; /* Increase the font size */
   color: #161616; /* Keep the text color */
   margin-bottom: 15px; /* Increase the bottom margin */
 }
 
 .text-content a {
-  color: #007bff;
+  color: #f28d0a;
   text-decoration: none; /* Removes underline */
 }
 .text-content .uc-berkeley {
@@ -74,7 +74,7 @@
 .text-content a.special-link {
   /* Styling for special links */
   font-weight: bold;
-  color: #0066cc;
+  color: #f28d0a;
 }
 
 

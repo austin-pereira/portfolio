@@ -43,7 +43,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-              <p>Austin Pereira 2024 &copy;</p>
+              <p>Pereira Inc. 2024 &copy;</p>
             </div>
           </div>
         </div>
@@ -53,4 +53,3 @@ const Footer = () => {
 }
 
 export default Footer;
-

@@ -1,0 +1,85 @@
+/* Add your CSS styles here */
+.experience-section {
+  margin-top: 20px; /* Add margin between sections */
+}
+
+.section-title {
+  text-align: center; /* Center align section titles */
+  margin-bottom: 30px; /* Add margin below section titles */
+  margin-right: auto;
+}
+
+.experience-box {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the flex direction */
+  background: white;
+  padding: 30px 60px; /* Increased padding for top and bottom */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px; /* Add margin between boxes */
+  width: calc(100% - 80px); /* Adjust width based on padding */
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.image-container {
+  flex: 0 0 auto; /* Do not grow, do not shrink, auto basis */
+  width: 100px; /* Fixed width for the image container */
+  height: 100px; /* Fixed height for the image container */
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* Circular shape */
+  
+}
+
+.img-with-border {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-content {
+  flex: 1; /* Take the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-content h2 {
+  font-size: 1.2em;
+  color: #434343;
+  margin: 0 0 5px 0;
+}
+
+.text-content hr {
+  border: 0;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin: 5px 0;
+}
+
+.text-content p {
+  font-size: 0.9em;
+  color: #161616;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .experience-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Smaller padding on smaller screens */
+  }
+
+  .image-container {
+    width: 80px; /* Smaller size on mobile */
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+}
