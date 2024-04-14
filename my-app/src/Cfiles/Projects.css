@@ -1,10 +1,56 @@
-import React from 'react';
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-const Projects = () => {
-  return (
-    
-     <div>Coming Soon</div>
-  );
-};
+.portfolio-card {
+  width: 300px; /* Increased width for larger cards */
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
 
-export default Projects;
+.portfolio-image {
+  width: 100%;
+  height: 200px; /* Increased height for larger image */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.portfolio-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 1.4rem; /* Slightly larger font size */
+  margin-bottom: 10px;
+}
+
+.portfolio-description {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.portfolio-button {
+  padding: 12px; /* Increased padding for button */
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #1e4bb5;
+}

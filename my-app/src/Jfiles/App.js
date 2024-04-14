@@ -9,7 +9,7 @@ import '../Cfiles/App.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import About from './HeaderRest';
 import Experience from './Experience';
-import Projects from './Projects';
+import Portfolio from './Projects';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<> <Header /> <Description /><MainBody /><Footer /></>} />
         <Route path="/skills" element={<> <About /> <Skills /> <Footer /> </>} />
         <Route path="/Experience" element={<> <About /> <Experience /> <Footer /> </>} /> 
-        <Route path="/Projects" element={<> <About /> <Projects /> <Footer /> </>} />         
+        <Route path="/Projects" element={<> <About /> <Portfolio /> <Footer /> </>} />         
       </Routes>
     </div>
   );

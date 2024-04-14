@@ -11,6 +11,7 @@ const About = () => {
           <span className="header-title">Robotics and AI Engineer</span>
         </div>
         <nav className="header-nav">
+        <Link to="/">Home</Link>
           <Link to="/skills">Skills</Link>
           <Link to="/experience">Experience</Link>
           <Link to="/projects">Projects</Link>
