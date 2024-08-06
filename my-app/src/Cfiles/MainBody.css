@@ -5,94 +5,109 @@
   padding: 100px;
   padding-top: 0px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin: 20px auto;
-  max-width: 1050px; /* Adjusted to set a max-width */
+  max-width: 1200px;
+  position: relative; 
 }
 
 .image-container {
-  margin-right: 150px; /* Space between image and text */
-
+  margin-right: 0px; /* Reduced space between image and text */
+  position: relative; /* Allow positioning of the image */
 }
 
-.img-with-border {
-  width: 220px; /* Adjusted size */
-  height: 220px; /* Adjusted size */
-  border-radius: 50%;
-  border: 5px solid #0997c3; /* Adjusted color and thickness */
-  padding: 3px; /* Adjusted padding */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+.profile-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  position: absolute;
+  top: -150px; /* Move the image up */
+  left: -50px; /* Move the image left */
 }
-
-.image-container img {
-  
-  display: block; /* To prevent inline default space */
-  
-  /* width: 100%; /* Ensures the image takes the full width of its parent */
-  /* border-radius: 50%; Ensures the image is circular */ 
-}
-
-
 
 .text-content {
   flex: 1;
-  padding-left: 40px; /* Added padding */
+  padding-left: 200px; /* Reduced padding */
+  margin-left: 200px;
 }
 
 .text-content h1 {
   font-weight: bold;
-  font-size: 3.2em; /* Adjusted size */
+  font-size: 3.2em;
   color: #434343;
   margin-bottom: 10px;
 }
-.text-content hr {
-  width: 50%; /* Adjust the width of the line */
-  height: 2px; /* Adjust the thickness of the line */
-  background-color: #464646; /* Adjust the color as necessary */
-  margin: 0 auto; /* Center the line horizontally */
-  border: none; /* Remove any default border */
+
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--index));
 }
 
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-content hr {
+  width: 50%;
+  height: 2px;
+  background-color: #464646;
+  margin: 0 auto;
+  border: none;
+}
 
 .text-content p {
-  font-size: 1em; /* Increase the font size */
-  color: #161616; /* Keep the text color */
-  margin-bottom: 15px; /* Increase the bottom margin */
+  font-size: 1.1em;
+  color: #161616;
+  margin-bottom: 20px;
 }
 
 .text-content a {
   color: #f28d0a;
-  text-decoration: none; /* Removes underline */
+  text-decoration: none;
 }
+
 .text-content .uc-berkeley {
   font-weight: bold;
-  color: rgb(198, 149, 27); /* Change color to golden */
+  color: rgb(198, 149, 27);
 }
 
 .text-content .focus {
   font-weight: bold;
-  color: rgb(3, 142, 193); /* Change color to blue */
-}
-.text-content a.special-link {
-  /* Styling for special links */
-  font-weight: bold;
-  color: #f28d0a;
+  color: rgb(3, 142, 193);
 }
 
-
-/* Add media query for responsiveness */
 @media (max-width: 768px) {
   .main-body {
     flex-direction: column;
     text-align: center;
+    padding: 40px;
   }
 
   .image-container {
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .profile-img {
+    position: relative; /* Reset positioning for smaller screens */
+    top: 0; /* Reset top position */
+    left: 0; /* Reset left position */
+    transform: none; /* Reset transform */
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
+  }
 
   .text-content {
     padding-left: 0;
+    text-align: center;
   }
 }

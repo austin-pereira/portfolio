@@ -1,43 +1,55 @@
 import React from 'react';
 import '../Cfiles/MainBody.css';
-import profilePic from '../profile.png';
+import profilePic from '../profile.jpg';
 
 function MainBody() {
   return (
     <div className="main-body">
       <div className="image-container">
-        {/* Assuming you have the image in your public folder or you can import it */}
-        <img src={profilePic} alt="Profile" className="img-with-border" />
-      </div>
+        <img src={profilePic} alt="Profile" className="profile-img" />
+    </div>
       <div className="text-content">
-        <h1>I'm Austin</h1>
+        <h1>
+          <span className="animated-letter" style={{ '--index': 0 }}>👋🏼</span>
+          <span className="animated-letter" style={{ '--index': 1 }}>H</span>
+          <span className="animated-letter" style={{ '--index': 2 }}>e</span>
+          <span className="animated-letter" style={{ '--index': 3 }}>l</span>
+          <span className="animated-letter" style={{ '--index': 4 }}>l</span>
+          <span className="animated-letter" style={{ '--index': 5 }}>o</span>
+          <span className="animated-letter" style={{ '--index': 6 }}>,</span>
+          <span className="animated-letter" style={{ '--index': 7 }}>&nbsp;</span>
+          <span className="animated-letter" style={{ '--index': 8 }}>I</span>
+          <span className="animated-letter" style={{ '--index': 9 }}>'m</span>
+          <span className="animated-letter" style={{ '--index': 10 }}>&nbsp;</span>
+          <span className="animated-letter" style={{ '--index': 11 }}>A</span>
+          <span className="animated-letter" style={{ '--index': 12 }}>u</span>
+          <span className="animated-letter" style={{ '--index': 13 }}>s</span>
+          <span className="animated-letter" style={{ '--index': 14 }}>t</span>
+          <span className="animated-letter" style={{ '--index': 15 }}>i</span>
+          <span className="animated-letter" style={{ '--index': 16 }}>n</span>
+          <span className="animated-letter" style={{ '--index': 17 }}>!</span>
+        </h1>
         <hr />
         <p>
-        As a senior at the 
-        <span className="uc-berkeley">
-        <a href="https://www.berkeley.edu/about/" target="_blank" rel="noopener noreferrer">
-        University Of California, Berkeley
-        </a></span>, majoring in 
-        Computer Science with a focus on <span className="focus">AI, Robotics</span>. Alongside academics, 
-        I have a keen interest in <span className="focus">Ethical Hacking</span>, driven by a desire to ensure the security of digital systems.
-      </p> 
-      <p>
-        Outside of my academic, I find joy in a variety of activities. I am an avid <span className="focus">Guitarist</span>, 
-        enjoying the creative expression and peace that it brings. Exploring nature through hiking and seeking out exploring new <span className="focus">Cusinies </span> 
-        are also among my favorite pastimes. Additionally, I have a penchant for <span className="focus">Adrenaline</span>-inducing activities, 
-        always on the lookout for new adventures.
-      </p>
-      <p>
-        In the realm of martial arts, I am dedicated to honing my skills in disciplines such as <span className="focus">Muay Thai, Wushu</span>, Kyokushin Karate, 
-        and Brazilian Jiu-Jitsu. This commitment to martial arts not only enhances my physical fitness but also instills 
-        discipline and focus in all aspects of my life.
-      </p>
-      <p>
-        Looking towards the future, my ambition is to establish my own AI and Robotics company, with a particular emphasis 
-        on <span className="focus">Healthcare</span> applications. Drawing from my experiences in the <span className="focus">Startup</span> ecosystem, I aspire to eventually launch 
-        a <span className="focus">Venture Fund</span>, investing in emerging technologies across diverse sectors such as <span className="focus">Space Tech, Biotech, and Food Tech</span>.
-      </p>
-
+          A driven <span className="focus">Computer Science senior</span> at the 
+          <span className="focus"><a href="https://www.berkeley.edu/about/" target="_blank" rel="noopener noreferrer"> University of California, Berkeley</a></span>, 
+          with a focus on <span className="focus">AI and Robotics</span>. Passionate about building innovative products that leverage technology to solve real-world problems.
+        </p>
+        <p>
+          Currently building <span className="focus">Ephrium</span>, a startup product ecosystem designed to connect entrepreneurs, academics, investors, and mentors. 
+          Proven experience in <span className="focus">product development</span>, with a background in <span className="focus">market research, user testing</span>, and 
+          <span className="focus"> feature prioritization</span>. Committed to <span className="focus">ethical technology practices</span>, actively exploring 
+          cybersecurity through <span className="focus">ethical hacking</span>.
+        </p>
+        <p>
+          Beyond tech, I enjoy playing the <span className="focus">guitar</span>, practicing martial arts like 
+          <span className="focus"> Muay Thai, Kyokushin Karate, and Brazilian Jiu-Jitsu</span>, and engaging in outdoor sports and travelling.
+        </p>
+        <p>
+          Aspiring to launch a <span className="focus">venture fund</span> to invest in early-stage startups in 
+          <span className="focus"> Robotics, Healthcare, and Military products</span>, fueled by my passion for 
+          <span className="focus"> emerging technologies</span> and their potential to make a positive impact.
+        </p>
       </div>
     </div>
   );

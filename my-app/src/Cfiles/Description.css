@@ -4,7 +4,7 @@
     align-items: left;
     background: linear-gradient(to right, #0072ff, #00c6ff);
     padding: 80px;
-    color: white;
+    color: rgb(8, 13, 69);
     font-size: 18px;
   }
   
@@ -18,7 +18,7 @@
   
   .description-text p {
   margin: 10px 0 0; /* Only top margin */
-  font-size: 1.2em; /* Increase the font size */
+  font-size: 1.4em; /* Increase the font size */
 }
 
   

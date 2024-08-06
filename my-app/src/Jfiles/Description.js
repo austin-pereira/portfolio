@@ -5,7 +5,7 @@ const Description = () => {
   return (
     <section className="description">
       <div className="description-text">
-        <h1>Robotics and AI Engineer</h1>
+        <h1>Product : Tech : Startups</h1>
         <p>California, USA</p>
       </div>
     </section>

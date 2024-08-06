@@ -31,7 +31,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
   gap: 20px; /* Increased space between cards */
   justify-content: center;
-  align-items: center;
+  align-items: start; /* Aligns items to the top */
 }
 
 .skill-card {
@@ -41,8 +41,12 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 250px; /* Set a fixed height for all cards */
+  display: flex; /* Use flexbox for card layout */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
 }
-
 
 .skill-card:hover {
   transform: translateY(-5px); /* Slight raise effect on hover */
@@ -50,15 +54,18 @@
 }
 
 .skill-icon {
-  width: 80px; /* Increased icon size */
-  height: auto; /* Maintain aspect ratio */
+  width: 60px; /* Set a consistent icon size */
+  height: 60px; /* Set a consistent icon size */
   margin-bottom: 15px;
+  object-fit: contain; /* Ensures icons are not distorted */
 }
 
 .skill-name {
   font-size: 1.1rem;
   color: #333;
   font-weight: 500; /* Slightly bolder font for the skill name */
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove bottom margin */
 }
 
 /* Colored shadows for each tech */

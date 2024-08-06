@@ -8,14 +8,15 @@ const About = () => {
       <div className="header-content">
         <div className="name-and-title">
           <span className="header-name">Austin Pereira</span>
-          <span className="header-title">Robotics and AI Engineer</span>
+          <span className="header-title">Product Management</span>
         </div>
         <nav className="header-nav">
         <Link to="/">Home</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="https://medium.com/@austinpereira6602">Blogs</Link>
+        <Link to="/experience">Experience</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/case">Cases</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="https://medium.com/@austinpereira6602">Blogs</Link>
         </nav>
       </div>
     </header>
