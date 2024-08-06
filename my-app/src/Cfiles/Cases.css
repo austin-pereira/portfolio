@@ -1,0 +1,36 @@
+.cases-container {
+    /* Add your desired styling for the container */
+    margin-bottom: 450px;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    /* Heading Styling */
+    text-align: center; /* Align heading to the left */
+    font-size: 3em;
+    margin-bottom: 20px;
+
+    color: #333; /* Dark gray color */
+  }
+
+  .case-study-list {
+    list-style-position: inside; /* Add this line */
+  }
+  
+  .case-study-list li {
+    margin-bottom: 10px;  /* Add spacing between list items */
+    
+  }
+  
+  .case-study-list a {
+    /* Style your links as needed */
+    text-decoration: none;
+    color: rgb(50, 15, 15); 
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  
+  .case-study-list a:hover {
+    text-decoration: underline;
+  }
+  
